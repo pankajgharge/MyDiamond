@@ -37,7 +37,7 @@ namespace DesktopDemoProject.Model
 
                 List<NameValueHeaderValue> listHeaders = new List<NameValueHeaderValue>();
                 listHeaders.Add(new NameValueHeaderValue("Encoding", "utf-8"));
-                listHeaders.Add(new NameValueHeaderValue("user-agent", "DESKTOP-87VE32K"));
+                //listHeaders.Add(new NameValueHeaderValue("user-agent", "DESKTOP-87VE32K"));
                 listHeaders.Add(new NameValueHeaderValue("Connection", "keep-alive"));
 
 
