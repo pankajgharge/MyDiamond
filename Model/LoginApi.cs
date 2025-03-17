@@ -94,6 +94,8 @@ namespace DesktopDemoProject.Model
     {
         public string platform { get; set; }
         public string Device { get; set; }
+
+
     }
 }
 
