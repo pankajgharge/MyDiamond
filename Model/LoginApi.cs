@@ -96,6 +96,7 @@ namespace DesktopDemoProject.Model
         public string Device { get; set; }
 
         //Sample Checkin
+        //Sample checkin 2
     }
 }
 
