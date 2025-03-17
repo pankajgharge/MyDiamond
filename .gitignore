@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/DesktopDemoProject/FileContentIndex/ad84d1ae-52f5-4528-9fc0-2bf0ecc486dc.vsidx
+/.vs/MyDiamond/v17
+/.vs/DesktopDemoProject/v17
+/.vs/VSWorkspaceState.json
+/bin/Debug/DesktopDemoProject.exe
+/bin/Debug
+/obj/Debug
