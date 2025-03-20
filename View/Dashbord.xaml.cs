@@ -50,7 +50,7 @@ namespace DesktopDemoProject.View
             //MessageBox.Show("Logging out...");
             //Application.Current.Shutdown();
             MessageBox.Show("Logging out...");
-            LoginView loginPage = new LoginView();
+            LaunchWindow loginPage = new LaunchWindow();
             loginPage.Show();
             Window.GetWindow(this)?.Close();
         }
