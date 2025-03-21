@@ -1,8 +1,7 @@
 ﻿
 namespace DesktopDemoProject.Services
 {
-    public class PostData
-    {
+    public class PostDataAdmin    {
         public string email { get; set; }
         public bool isWeb { get; set; }
         public bool isMobile { get; set; }

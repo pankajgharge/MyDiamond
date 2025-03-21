@@ -1,6 +1,6 @@
 ﻿namespace DesktopDemoProject.Services
 {
-    public class LoginUser
+    public class LoginUserAdmin
     {
         public string Email { get; set; }
         public string UserID { get; set; }
