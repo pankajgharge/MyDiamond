@@ -64,9 +64,9 @@
     <Compile Include="Base\BaseViewModel.cs" />
     <Compile Include="Base\Command.cs" />
     <Compile Include="Services\DTOs\DeviceDetails.cs" />
-    <Compile Include="Services\DTOs\LoginResult.cs" />
-    <Compile Include="Services\DTOs\LoginUser.cs" />
-    <Compile Include="Services\DTOs\PostData.cs" />
+    <Compile Include="Services\DTOs\LoginResultAdmin.cs" />
+    <Compile Include="Services\DTOs\LoginUserAdmin.cs" />
+    <Compile Include="Services\DTOs\PostDataAdmin.cs" />
     <Compile Include="UserControls\DiamondShowCaseUserControl.xaml.cs">
       <DependentUpon>DiamondShowCaseUserControl.xaml</DependentUpon>
     </Compile>

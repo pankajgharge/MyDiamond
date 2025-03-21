@@ -6,23 +6,30 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-
 namespace DesktopDemoProject.Services
 {
     public  class LoginApi
     {
-        public async Task PostAPI()
-        {
-           
+        string loginUrlAdmin = "https://kohinoortrade.com/users/login";
+
+        /// <summary>
+        /// //Call API something like below; sample code
+        //LogInApi login = new LogInApi();
+        //var result = await login.PostAPIAdmin("avinixsolutions@gmail.com", "123456789", LoginUserType.Admin);
+        /// </summary>
+        /// <returns></returns>
+        public async Task<LoginResultAdmin> PostAPIAdmin()
+        {           
             HttpClient client = new HttpClient();
             HttpRequestMessage request;
             HttpResponseMessage response;
             string responseBody;
+            LoginResultAdmin result = new LoginResultAdmin();
             try
-            {
-                request = new HttpRequestMessage(HttpMethod.Post, "https://kohinoor-whak.onrender.com/users/login");
+            {                
+                request = new HttpRequestMessage(HttpMethod.Post, loginUrlAdmin);
                 var stringData = JsonConvert.SerializeObject
-                    (new PostData
+                    (new PostDataAdmin
                     {
                         email = "avinixsolutions@gmail.com",
                         isMobile = false,
@@ -40,24 +47,19 @@ namespace DesktopDemoProject.Services
                     new NameValueHeaderValue("Connection", "keep-alive")
                 };
 
-
                 foreach (var header in listHeaders)
                 {
                     request.Headers.Add(header.Name, header.Value);
                 }
-
                 response = await client.SendAsync(request);
-
                 responseBody = await response.Content.ReadAsStringAsync();
-
-                var deserializeLogin = JsonConvert.DeserializeObject<LoginResult>(responseBody);
-
-                Console.WriteLine(responseBody);
+                result = JsonConvert.DeserializeObject<LoginResultAdmin>(responseBody);                
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-            }            
+            }
+            return result;
         }
     }
     
