@@ -63,10 +63,13 @@
     </ApplicationDefinition>
     <Compile Include="Base\BaseViewModel.cs" />
     <Compile Include="Base\Command.cs" />
+    <Compile Include="Services\DTOs\LoginResultEmployee.cs" />
     <Compile Include="Services\DTOs\DeviceDetails.cs" />
     <Compile Include="Services\DTOs\LoginResultAdmin.cs" />
     <Compile Include="Services\DTOs\LoginUserAdmin.cs" />
+    <Compile Include="Services\DTOs\LoginUserEmployee.cs" />
     <Compile Include="Services\DTOs\PostDataAdmin.cs" />
+    <Compile Include="Services\DTOs\PostDataEmployee.cs" />
     <Compile Include="UserControls\DiamondShowCaseUserControl.xaml.cs">
       <DependentUpon>DiamondShowCaseUserControl.xaml</DependentUpon>
     </Compile>
